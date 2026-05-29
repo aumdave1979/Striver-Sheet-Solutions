@@ -1,9 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-// to be solved tomorow currently only for the streak purpose
-
-int main(){
-
-}
+class Solution {
+public:
+    int floorSqrt(int n)  {
+      int low = 0;
+      int high= n;
+      int ans = 0;
+      while(low<=high){
+        int mid = low + ((high-low)/2);
+        
+        if((mid*mid)<=n){
+            ans = mid;
+            low = mid+1;
+        }
+        else{
+            high = mid-1;
+        }
+      }
+    return ans;
+    }
+};
