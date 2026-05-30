@@ -8,7 +8,7 @@ public:
         int low = 0;
         int n = nums.size();
         int high = n-1;
-        int ans = INT32_MAX;
+        int ans = INT32_MAX; 
         int idx=0;
         while(low<=high){
             int mid = low + (high-low)/2;
