@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// binary search ranging from 1 to n comparing least hour 
+// binary search ranging from 1 to highest number in array and then comparing least hour 
 
 class Solution {
 public:
