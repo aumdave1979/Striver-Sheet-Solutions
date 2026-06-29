@@ -21,11 +21,11 @@ public:
             return;
         }
         traversal(root->left);
-        data.push_back(root->val);
         traversal(root->right);
+        data.push_back(root->val);
     }
 
-    vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> postorderTraversal(TreeNode* root) {
         traversal(root);
         return data;
     }
