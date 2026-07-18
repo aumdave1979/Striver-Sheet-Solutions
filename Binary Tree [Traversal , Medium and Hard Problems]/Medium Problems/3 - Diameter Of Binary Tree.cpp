@@ -25,6 +25,7 @@ public:
         int left_height = height(root->left);
         int right_height = height(root->right);
 
+        
         int curr = left_height + right_height;
 
         return max({curr,diameterOfBinaryTree(root->left),diameterOfBinaryTree(root->right)});
