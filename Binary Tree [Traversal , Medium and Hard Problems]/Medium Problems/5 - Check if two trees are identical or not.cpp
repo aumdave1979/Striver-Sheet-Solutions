@@ -24,3 +24,39 @@ public:
         return isSameTree(p->left,q->left) && isSameTree(p->right,q->right);
     }
 };
+
+ // Vector Based approch Traversal based solution
+/*
+class Solution {
+public:
+    vector<int> data1;
+    vector<int>data2;
+
+    void traversal(TreeNode* root){
+        if(root == nullptr){
+            data1.push_back(INT_MIN);
+            return;
+        }
+        data1.push_back(root->val);
+        traversal(root->left);
+        traversal(root->right);
+    }
+    void traversal2(TreeNode* root){
+        if(root == nullptr){
+            data2.push_back(INT_MIN);
+            return;
+        }
+
+        data2.push_back(root->val);
+        traversal2(root->left);
+        traversal2(root->right);
+    }
+
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        traversal(p);
+        traversal2(q);
+        if(data1 == data2) return true;
+
+        return false;
+    }
+};*/
